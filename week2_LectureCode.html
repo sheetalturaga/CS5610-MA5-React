@@ -1,0 +1,258 @@
+<html>
+
+<head>
+    <!-- CSS embedded in HTML 
+    
+    ** Naming Conventions: There is no specific standards but usually attributes
+        you can use pascal class and class names are written with a hyphen 
+    
+    ** Uniformity is key in the naming convention 
+
+    ** Colors in CSS: RGB(55,25,50) function can be used; taking the argument and giving the
+        output color; hexadecimal [RGB with Opacity(55,25,50, .25)]- transparency can be increased or decreased in 
+        this format;
+    ** at-rules(@): @media helps in controlling the size of the screen using -->
+
+
+
+    <style type="text/css">
+        /* Targeting style on the div tag*/
+        div {
+            color: red;
+        }
+
+        /* Targeting style on the header tag */
+        h1 {
+            color: blue;
+        }
+
+        @media(min-width: 300px) {
+            div {
+                color: powderblue
+            }
+        }
+
+        /* Denoting a class called red-class */
+        .red-class {
+            color: black;
+        }
+
+        /* Denoting a class called big-font */
+        .big-font {
+            font-size: 32px;
+        }
+
+        /* Using the id tag to target a specific command in HTML */
+        #TextBody {
+            border: 2px solid purple;
+        }
+
+        /*Using the id tag to target a specific command in HTML*/
+        #TextBody2 {
+            color: orange;
+        }
+
+        .box,
+        .square {
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            border: 1px solid blue;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        /* The Parent controller of the box class and manages their orientation
+        based on the */
+        .box-parent {
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+        }
+
+        .box:hover {
+            border: 2px saddlebrown;
+        }
+
+        .box::after {
+            content: "X";
+        }
+
+
+        .super-box {
+            height: 50%;
+            width: 50%;
+            background-color: green;
+            border: 1px solid pink;
+        }
+
+        .shift-left {
+            position: relative;
+            right: 20px;
+
+        }
+
+        #amazing-header {
+            /* Element is positioned according to the normal flow of the document */
+            /* position: relative; */
+
+            /* Remove fromm flow of doc; position relative to parent */
+            /* position: absolute;
+        top: 0;
+        left: 0; */
+
+            /* Remove fromm flow of doc; position relative to browser */
+            /* position: fixed;
+        top: 0;
+        left: 0; */
+
+            /* Remove fromm flow of doc; position relative to scrolling */
+            /* Recommend moving the header down template to see the full demo */
+            position: sticky;
+            top: 100px;
+            left: 0;
+
+            background-color: blueviolet;
+            width: 100%;
+            z-index: 100;
+        }
+
+        p {
+            position: relative;
+            z-index: 0;
+            background-color: yellow;
+        }
+
+        /* FLOAT puts an element to the left or right of it’s parent element 
+        (also known as container) and removes it from the normal flow of the page 
+        (and allows in-line elements to wrap around it).*/
+        #lovely-square {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: purple;
+            border-width: 3px;
+            float: none;
+            /* float: left;
+        float: right; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box-parent">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+    </div>
+    <div class="super-box"></div>
+    <!-- classes can be combined and called like below, same with id tags as well-->
+
+    <!-- <div class="red-class big-font" id="#TextBody #TextBody2">
+        <h1>This is my website!</h1>
+        This is the subtitle of my website
+    </div>
+    <div> I hope you like my website </div> -->
+
+    <div id="amazing-header">I am the greatest header in the world!</div>
+
+    <div>
+        I'm baby umami yuccie truffaut, polaroid subway tile banh mi lo-fi thundercats post-ironic trust fund organic
+        selfies art party. Dreamcatcher palo santo yr, franzen whatever chartreuse messenger bag. Pour-over truffaut
+        selvage
+        hella knausgaard neutra cloud bread iceland. Hot chicken hammock enamel pin, VHS farm-to-table vinyl everyday
+        carry
+        skateboard tbh kogi church-key waistcoat celiac. Fixie cronut trust fund heirloom, fashion axe jianbing
+        live-edge
+        adaptogen.
+    </div>
+    <div>
+        Etsy quinoa pabst, vaporware raclette iceland letterpress paleo neutra air plant hammock sustainable
+        microdosing.
+        Pour-over chartreuse vinyl put a bird on it hoodie austin crucifix taxidermy you probably haven't heard of them
+        master cleanse franzen intelligentsia. Iceland man braid tofu vice, authentic flannel palo santo hammock.
+        Sustainable tofu typewriter, hexagon pickled banh mi whatever migas franzen. Heirloom pickled tbh small batch
+        squid
+        affogato pabst cliche PBR&B try-hard. Truffaut selvage hella, slow-carb VHS vinyl yuccie schlitz tacos
+        kickstarter
+        tattooed scenester tofu.
+    </div>
+    <div>
+        Messenger bag live-edge 8-bit, listicle pug pour-over kickstarter squid tattooed brooklyn. Irony portland
+        cornhole
+        banjo listicle salvia la croix taxidermy meditation prism. Everyday carry before they sold out subway tile
+        aesthetic
+        craft beer locavore selfies, heirloom forage. Four loko single-origin coffee normcore, tacos art party VHS hot
+        chicken keytar flexitarian hammock fingerstache semiotics keffiyeh. Mustache af twee bitters freegan forage
+        williamsburg blue bottle pinterest vinyl offal YOLO pork belly godard gastropub. Lo-fi succulents organic
+        bicycle
+        rights tattooed etsy kickstarter marfa ramps normcore quinoa live-edge ethical pork belly tousled. Aesthetic
+        mustache selvage, meditation tacos cliche umami mlkshk four dollar toast single-origin coffee before they sold
+        out
+        hashtag readymade tbh godard.
+    </div>
+    <div>
+        Vegan mixtape brooklyn try-hard, edison bulb lomo live-edge taiyaki gentrify. Pitchfork mlkshk mustache shabby
+        chic
+        jean shorts ennui iceland kogi. 8-bit distillery everyday carry intelligentsia. Everyday carry PBR&B cornhole
+        jean
+        shorts.
+    </div>
+    <div>
+        Man bun +1 tattooed yuccie skateboard lomo. You probably haven't heard of them vice shaman hot chicken, squid
+        tofu
+        cliche chia heirloom tote bag. Hella shaman thundercats cardigan. Vice fam heirloom raw denim, vinyl fixie hot
+        chicken pok pok roof party literally disrupt skateboard. Palo santo slow-carb vegan cray bitters mustache
+        kinfolk
+        retro tote bag biodiesel small batch flexitarian.
+    </div>
+
+    <div id="lovely-square"></div>
+
+    I'm baby umami yuccie truffaut, polaroid subway tile banh mi lo-fi thundercats post-ironic trust fund organic
+    selfies
+    art party. Dreamcatcher palo santo yr, franzen whatever chartreuse messenger bag. Pour-over truffaut selvage hella
+    knausgaard neutra cloud bread iceland. Hot chicken hammock enamel pin, VHS farm-to-table vinyl everyday carry
+    skateboard
+    tbh kogi church-key waistcoat celiac. Fixie cronut trust fund heirloom, fashion axe jianbing live-edge adaptogen.
+
+    Etsy quinoa pabst, vaporware raclette iceland letterpress paleo neutra air plant hammock sustainable microdosing.
+    Pour-over chartreuse vinyl put a bird on it hoodie austin crucifix taxidermy you probably haven't heard of them
+    master
+    cleanse franzen intelligentsia. Iceland man braid tofu vice, authentic flannel palo santo hammock. Sustainable tofu
+    typewriter, hexagon pickled banh mi whatever migas franzen. Heirloom pickled tbh small batch squid affogato pabst
+    cliche
+    PBR&B try-hard. Truffaut selvage hella, slow-carb VHS vinyl yuccie schlitz tacos kickstarter tattooed scenester
+    tofu.
+
+    Messenger bag live-edge 8-bit, listicle pug pour-over kickstarter squid tattooed brooklyn. Irony portland cornhole
+    banjo
+    listicle salvia la croix taxidermy meditation prism. Everyday carry before they sold out subway tile aesthetic craft
+    beer locavore selfies, heirloom forage. Four loko single-origin coffee normcore, tacos art party VHS hot chicken
+    keytar
+    flexitarian hammock fingerstache semiotics keffiyeh. Mustache af twee bitters freegan forage williamsburg blue
+    bottle
+    pinterest vinyl offal YOLO pork belly godard gastropub. Lo-fi succulents organic bicycle rights tattooed etsy
+    kickstarter marfa ramps normcore quinoa live-edge ethical pork belly tousled. Aesthetic mustache selvage, meditation
+    tacos cliche umami mlkshk four dollar toast single-origin coffee before they sold out hashtag readymade tbh godard.
+
+    Vegan mixtape brooklyn try-hard, edison bulb lomo live-edge taiyaki gentrify. Pitchfork mlkshk mustache shabby chic
+    jean
+    shorts ennui iceland kogi. 8-bit distillery everyday carry intelligentsia. Everyday carry PBR&B cornhole jean
+    shorts.
+
+    Man bun +1 tattooed yuccie skateboard lomo. You probably haven't heard of them vice shaman hot chicken, squid tofu
+    cliche chia heirloom tote bag. Hella shaman thundercats cardigan. Vice fam heirloom raw denim, vinyl fixie hot
+    chicken
+    pok pok roof party literally disrupt skateboard. Palo santo slow-carb vegan cray bitters mustache kinfolk retro tote
+    bag
+    biodiesel small batch flexitarian.
+
+</body>
+
+</html>
