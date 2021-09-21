@@ -1,0 +1,235 @@
+<!-- Mini assignment 2 Documentation:
+    Task1: Create a header with a fixed position, stretched across the screen
+    with a solid color with the name centered with stylized font. It should not cover
+    any other content on the page when loaded
+
+    Task2: Create 100 flex column boxes, in a minimum of 3 different colors. Boxes must
+    be put in 3 different columns that are equally spaced. The final row should not shrink
+    or stretch out even if there is not enough to complete a final row
+
+    Task 3: Table with contact information at the bottom of the page that includes 
+    atleast 1 way to contact you creating an 4x2 table with form of contact in one and the
+    actual information in the other column
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header{
+            display: sticky;
+            top: 0px;
+            height: 150px;
+            width: 100vw;
+            margin: 0;
+            padding: 0px;
+            position: fixed;
+            z-index: 9999;
+            background-color: whitesmoke;
+            
+        }
+
+        #headercontent {
+            margin: 0%;
+            padding: 0px;
+            color: black;
+            font-family: fantasy 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-size: 30px;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 33% ;
+            row-gap: 10px;
+            height: 100px;
+            /* padding: 10px; */
+            margin: 5px;
+
+        }
+
+        .center {
+            padding-top: 50px;
+        }
+
+        .box-parent {
+            /* display: flex; */
+            /* display: grid; */
+            grid-template-columns: 400px 400px 400px;
+            grid-template-rows: 200px 200px 200px;
+            /* flex-direction: row; */
+            /* justify-content: space-evenly center; */
+            /* column-gap: inherit; */
+        }
+
+        .box {
+            position: relative;
+            top: 150px;
+            float: left;
+            height: 200px;
+            width: 31%;
+            margin-left: 20px;
+
+        }
+
+
+        .red-color{
+            background-color: red;
+            border: blue;
+        }
+
+        .green-color {
+            background-color: green;
+            border: green;
+        }
+
+        .blue-color {
+            background-color: blue;
+            border: red;
+        }
+
+        .info-footer {
+            display: inline-block;
+            vertical-align: bottom;
+            bottom: 0px;
+            left: 0px;
+            padding: 10px;
+            margin-left: 33%;
+            margin-right: 33%;
+            margin-bottom: 0%;
+            width: 600px;
+            border: 1px solid white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header center" id="headercontent">
+        <div><h1>SHEETAL IYER TURAGA</h1></div>
+    </div>
+    <div class="box-parent column">
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+        <div class="box red-color"></div>
+        <div class="box blue-color"></div>
+        <div class="box green-color"></div>
+    </div>
+    <div class="info-footer">
+        <table>
+            <tr>Contact Information</tr>
+            <tr>
+                <td>Email</td>
+                <td>turaga.s@northeastern.edu </td>
+            </tr>
+            <tr>
+                <td>GitHub</td>
+                <td>https://github.ccs.neu.edu/sheeta1turaga/CS5610_WebDev</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
