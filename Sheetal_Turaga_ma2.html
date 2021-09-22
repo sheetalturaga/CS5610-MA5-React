@@ -23,7 +23,7 @@
         .header{
             display: sticky;
             top: 0px;
-            height: 150px;
+            height: 120px;
             width: 100vw;
             margin: 0;
             padding: 0px;
@@ -34,12 +34,13 @@
         }
 
         #headercontent {
+            font-display: auto;
             margin: 0%;
             padding: 0px;
-            color: black;
+            color: rgb(38, 64, 136);
             font-family: fantasy 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-style: italic;
-            font-size: 30px;
+            font-size: 25px;
             width: 100%;
         }
 
@@ -80,33 +81,38 @@
 
 
         .red-color{
-            background-color: red;
-            border: blue;
+            background-color: rgb(216, 132, 132);
         }
 
         .green-color {
-            background-color: green;
-            border: green;
+            background-color: rgb(121, 163, 121);
         }
 
         .blue-color {
-            background-color: blue;
-            border: red;
+            background-color: rgb(76, 76, 117);
         }
 
-        .info-footer {
-            display: inline-block;
-            vertical-align: bottom;
-            bottom: 0px;
-            left: 0px;
+        .main {
+            float: left;
+            top: 100%;
+            width: 100%;
+            min-height: 90px;
+            margin: 2px;
             padding: 10px;
-            margin-left: 33%;
-            margin-right: 33%;
-            margin-bottom: 0%;
-            width: 600px;
-            border: 1px solid white;
-            text-align: center;
+            min-width: 600px;
+            position:fixed;
         }
+
+        #bottom {
+            float:inline-end;
+            /* display: flex; */
+            /* justify-content: bottom; */
+            position:absolute; 
+            vertical-align: bottom;                
+            /* bottom:0;                         
+            left:0;                          */
+        }
+
     </style>
 </head>
 <body>
@@ -217,19 +223,23 @@
         <div class="box blue-color"></div>
         <div class="box green-color"></div>
     </div>
-    <div class="info-footer">
-        <table>
-            <tr>Contact Information</tr>
-            <tr>
-                <td>Email</td>
-                <td>turaga.s@northeastern.edu </td>
-            </tr>
-            <tr>
-                <td>GitHub</td>
-                <td>https://github.ccs.neu.edu/sheeta1turaga/CS5610_WebDev</td>
-            </tr>
+    <div class="main" id="bottom">
+        <table >
+            <caption>====================================================</caption>
+            <h3>Contact Information</h3>
+            <tbody>
+                <tr>
+                    <th scope='col'>Email :</th>
+                    <td>turaga.s@northeastern.edu</td>
+                </tr>
+                <tr>
+                    <th scope='col'>Github :</th>
+                    <td>https://github.ccs.neu.edu/sheeta1turaga/CS5610_WebDev</td>
+                </tr>
+            </tbody>
         </table>
     </div>
-
+    
+    
 </body>
 </html>
