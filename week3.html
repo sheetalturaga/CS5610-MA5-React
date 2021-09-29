@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theta's Website</title>
+</head>
+<style type ="text/css">
+
+    .container {
+        height: 100%;
+        display: grid;
+        /* justify-content: center; */
+        grid-template-rows: 25% 25% 50%
+            "box1 box1 box1"
+            "box2 box2 box3"
+        ;
+
+    }
+    .box {
+        background-color: aqua;
+        border: 1px solid blue;
+        /* padding: 10px 25px 5px 25px; */
+
+    }
+
+    #box1 {
+        grid-area: box1;
+    }
+
+    #box2 { 
+        /* order: 0; based on indices of an array */
+        /* flex-grow: 2; sets the growth factor only if there is room to grow */
+        /* flex-shrink: 2; if there is not enough room do the opposite of flex-grow */
+        grid-area: box2;
+    }
+
+    #box3 {
+        grid-area: box3;
+    }
+
+    .purple {
+        color: purple;
+    }
+</style>
+<body>
+    <!-- <div class="purple"> Hello 
+        <h1>Welcome to my class</h1>
+        <h2>I hope you're learning a lot</h2>
+    </div> -->
+
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+    </div>
+</body>
+</html>
