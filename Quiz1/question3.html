@@ -1,0 +1,34 @@
+<!-- Reference made to: https://stackoverflow.com/questions/40091515/how-to-have-two-items-on-opposite-sides-on-the-same-line-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+        display: flex;
+        position: sticky;
+        height: 100px;
+        width: 100%;
+        background: gray;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #email{
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+<body>
+    <span class="navbar">Sheetal Turaga <div id="email"></div>turaga.s@northeastern.edu</span>
+    <span> </span>
+    
+</body>
+</html>

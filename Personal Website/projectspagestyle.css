@@ -1,0 +1,82 @@
+@import url("./indexstyle.css");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.project-main-container {
+  margin: 8px -16px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+.project-main-container,
+.project-main-container > .project-block {
+  padding: 20px;
+}
+
+.project-block {
+  float: left;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(162, 125, 163); */
+}
+
+.project-main-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .project-block {
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-main-container {
+    justify-content: space-between;
+    width: 80vw;
+    margin-left: 1rem;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  }
+
+  .project-page {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+  }
+
+  li,
+  a {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  ul {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .name-logo {
+    font-size: 1rem;
+  }
+}
